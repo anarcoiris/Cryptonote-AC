@@ -17,7 +17,7 @@ namespace parameters {
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x971b5; // addresses start with "XRY1"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 0x1802c7; // addresses start with "AXC"
 const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 const uint64_t CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE           = 10;
@@ -101,12 +101,12 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 const uint64_t START_BLOCK_REWARD                            = (UINT64_C(100) * parameters::POINT);
-const uint64_t ICO_BLOCK_REWARD	                             = (UINT64_C(18446744073) * parameters::COIN); // 18.4 billion ICO
+const uint64_t ICO_BLOCK_REWARD	                             = (UINT64_C(100) * parameters::COIN); // 18.4 billion ICO
 const uint64_t MAX_BLOCK_REWARD                              = (UINT64_C(10) * parameters::COIN);
-const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(264000));
+const uint64_t REWARD_INCREASE_INTERVAL                      = (UINT64_C(102000));
 
-const char     CRYPTONOTE_NAME[]                             = "Dirham";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001a08d06029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121012c342af233d31a8c12d0e26f87eadcf28168949be8ecd9c8b74aa7eec74c50a3";
+const char     CRYPTONOTE_NAME[]                             = "Anarcoin";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001a08d06029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121019115360dab81cff9f4c32974a10bac7a673a5a64bd54074cef85b7817173e3e5";
 const uint32_t GENESIS_NONCE                                 = 70;
 const uint64_t GENESIS_TIMESTAMP                             = 1496764095;
 
@@ -140,11 +140,8 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000; // 5 second
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "0000000000000000000000000000000000000000000000000000000000000000";
 
 const std::initializer_list<const char*> SEED_NODES = {
-  "108.61.215.239:23888",
-  "45.76.115.89:23888",
-  "45.32.199.3:23888",
-  "45.32.203.114:23888",
-  "45.63.43.26:23888",
+  "83.37.116.94:23888",
+  "92.190.225.244:23888",
 };
 
 struct CheckpointData {
